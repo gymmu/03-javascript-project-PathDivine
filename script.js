@@ -31,3 +31,10 @@ export function aufgabe02(args) {
   return result.join("");
 
 }
+
+export function aufgabe03(args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
