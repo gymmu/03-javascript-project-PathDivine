@@ -49,3 +49,11 @@ export function aufgabe03(args) {
   }
   return count
 }
+
+
+export function aufgabe04(args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
