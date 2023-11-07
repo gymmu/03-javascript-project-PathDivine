@@ -83,3 +83,10 @@ export function aufgabe08(args) {
   }
   return result.join("")
 }
+
+export function aufgabe05(args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
