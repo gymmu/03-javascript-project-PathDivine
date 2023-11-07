@@ -84,9 +84,31 @@ export function aufgabe08(args) {
   return result.join("")
 }
 
+
 export function aufgabe05(args) {
   const input = args
-  const result = []
-  
-  return result.join("")
+  let uppercaseCount = 0
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    
+    if (currentElement === '.') {
+
+    } else if (currentElement === '') {
+
+    } else if (currentElement === currentElement.toUpperCase()) {
+      uppercaseCount++
+    }
+  }
+
+  if (uppercaseCount > 0) {
+
+  return true
+
+} else {
+
+   return false
+
+}
+
 }
