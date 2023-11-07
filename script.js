@@ -54,6 +54,15 @@ export function aufgabe03(args) {
 export function aufgabe04(args) {
   const input = args
   const result = []
-  
-  return result.join("")
+  let count = 0
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    if (currentElement === ' ') {
+      count = count + 1
+    }
+
+  }
+  return count
 }
