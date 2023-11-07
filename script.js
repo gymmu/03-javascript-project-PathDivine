@@ -66,3 +66,10 @@ export function aufgabe04(args) {
   }
   return count
 }
+
+export function aufgabe08(args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
