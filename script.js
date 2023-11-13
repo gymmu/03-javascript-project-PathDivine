@@ -86,32 +86,34 @@ export function aufgabe08(args) {
 
 
 export function aufgabe05(args) {
-  const input = args
-  let uppercaseCount = 0
+  const input = args;
+  const result = []
+  let capitalLetters = 0;
 
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-    
-    if (currentElement === '.') {
+    const currentElement = input[i];
 
-    } else if (currentElement === '') {
-
-    } else if (currentElement === currentElement.toUpperCase()) {
-      uppercaseCount++
+    if (currentElement === ".") {
+    } else if (currentElement === " ") {
+    } else {
+      const asciiCode = currentElement.charCodeAt(0);
+      if (
+        (asciiCode < 65 || (asciiCode > 90 && asciiCode < 97) || asciiCode > 122)
+      ) {
+        return false
+      } else if (currentElement === currentElement.toUpperCase()) {
+        capitalLetters++
+      }
     }
   }
 
-  if (uppercaseCount > 0) {
-
-  return true
-
-} else {
-
-   return false
-
-}
-
-}
+  if (capitalLetters > 0) {
+    return true
+  } else {
+     return false
+  }
+   
+  }
 
 
 export function aufgabe12 (args) {
