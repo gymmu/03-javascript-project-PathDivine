@@ -105,7 +105,6 @@ export function aufgabe09(args) {
 export function aufgabe05(args) {
   const input = args;
   const result = []
-  let capitalLetters = 0;
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i];
@@ -126,8 +125,18 @@ export function aufgabe05(args) {
     const input = args
     const result = []
     
-    return result.join("")
+    for (let i = 0; i < input.length; i++) {
+      const currentElement = input[i]
+
+      const asciiCode = currentElement.charCodeAt(0);
+      if (
+        (asciiCode < 65 && asciiCode > 90 )
+      ) {
+        return true
+    }
   }
+  return false
+}
 
 
   export function aufgabe11 (args) {
