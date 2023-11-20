@@ -54,7 +54,7 @@ export function aufgabe03(args) {
 export function aufgabe04(args) {
   const input = args
   const result = []
-  let count = 0
+  let count = 1
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
@@ -63,7 +63,7 @@ export function aufgabe04(args) {
       count = count + 1
     }
 
-  }
+    }
   return count
 }
 
@@ -83,6 +83,14 @@ export function aufgabe08(args) {
   }
   return result.join("")
 }
+
+export function aufgabe09(args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
+
 
 
 export function aufgabe05(args) {
