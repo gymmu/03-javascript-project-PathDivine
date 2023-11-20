@@ -123,6 +123,14 @@ export function aufgabe05(args) {
   }
 
 
+  export function aufgabe11(args) {
+    const input = args
+    const result = []
+    
+    return result.join("")
+  }
+
+
 export function aufgabe12 (args) {
   const input = args
   const result = []
