@@ -93,25 +93,15 @@ export function aufgabe05(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i];
 
-    if (currentElement === ".") {
-    } else if (currentElement === " ") {
-    } else {
       const asciiCode = currentElement.charCodeAt(0);
       if (
-        (asciiCode < 65 || (asciiCode > 90 && asciiCode < 97) || asciiCode > 122)
+        (asciiCode >= 65 && asciiCode <= 90 )
       ) {
-        return false
-      } else if (currentElement === currentElement.toUpperCase()) {
-        capitalLetters++
-      }
+        return true
     }
   }
-
-  if (capitalLetters > 0) {
-    return true
-  } else {
-     return false
-  }
+  
+  return false
    
   }
 
