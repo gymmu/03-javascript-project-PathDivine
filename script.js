@@ -154,3 +154,10 @@ export function aufgabe12 (args) {
   
   return -1
 }
+
+export function aufgabe13(args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
