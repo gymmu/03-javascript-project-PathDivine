@@ -158,6 +158,16 @@ export function aufgabe12 (args) {
 export function aufgabe13(args) {
   const input = args
   const result = []
-  
-  return result.join("")
+ 
+let positionOfLastE = -1
+ 
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+   
+    if (currentElement === "e") {
+      positionOfLastE = i
+    }
+  }
+ 
+  return -1
 }
