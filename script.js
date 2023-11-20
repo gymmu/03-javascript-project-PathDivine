@@ -87,9 +87,18 @@ export function aufgabe08(args) {
 export function aufgabe09(args) {
   const input = args
   const result = []
-  
-  return result.join("")
-}
+  let len = 0
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    len = len + 1
+    
+  }
+  if (len === 6) {
+    return true }
+    else {return false}
+  }
 
 
 
