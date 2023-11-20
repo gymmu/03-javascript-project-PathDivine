@@ -123,11 +123,20 @@ export function aufgabe05(args) {
   }
 
 
-  export function aufgabe11(args) {
+  export function aufgabe11 (args) {
     const input = args
     const result = []
-    
-    return result.join("")
+    let ascii = -1
+   
+    if (input.length > 1){
+      return null
+    }
+    for (let i = 0; i < input.length; i++) {
+      const currentElement = input[i]
+      ascii = currentElement.charCodeAt(0)
+      return ascii
+    }
+    return null
   }
 
 
