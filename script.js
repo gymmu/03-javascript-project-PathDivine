@@ -145,8 +145,19 @@ export function aufgabe05(args) {
 export function aufgabe07(args) {
   const input = args
   const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    if (currentElement === 'und') {
+      return true
+    } else if (currentElement === 'Und') {
+      return true
+    }
+    
+  }
   
-  return result.join("")
+  return false
 }
 
 
