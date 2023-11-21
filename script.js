@@ -141,6 +141,16 @@ export function aufgabe05(args) {
      
     }
 
+
+export function aufgabe07(args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
+
+
+
   export function aufgabe11 (args) {
     const input = args
     const result = []
