@@ -230,3 +230,23 @@ let positionOfLastE = -1
  
   return positionOfLastE
 }
+
+
+export function aufgabe14(args) {
+  const input = args
+  let count = 0
+ 
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+ 
+    if (currentElement === "e") {
+      count = count + 1
+ 
+      if (count === 3) {
+        return i
+      }
+    }
+  }
+ 
+  return -1
+}
