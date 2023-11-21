@@ -122,22 +122,24 @@ export function aufgabe05(args) {
   }
 
   export function aufgabe06(args) {
-    const input = args
+    const input = args;
     const result = []
-    
+  
     for (let i = 0; i < input.length; i++) {
-      const currentElement = input[i]
-
-      const asciiCode = currentElement.charCodeAt(0);
-      if (
-        (asciiCode < 65 && asciiCode > 90 )
-      ) {
-        return true
+      const currentElement = input[i];
+  
+        const asciiCode = currentElement.charCodeAt(0);
+        if (
+          (asciiCode <= 31 || asciiCode >= 33 && asciiCode <= 64 
+          || asciiCode >= 91 && asciiCode <= 96 || asciiCode >= 123 )
+        ) {
+          return true
+      }
     }
-  }
-  return false
-}
-
+    
+    return false
+     
+    }
 
   export function aufgabe11 (args) {
     const input = args
