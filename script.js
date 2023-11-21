@@ -149,14 +149,10 @@ export function aufgabe07(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
 
-    if (currentElement === 'und') {
-      return true
-    } else if (currentElement === 'Und') {
+    if (input[i] === 'u' && input[i + 1] === 'n' && input[i + 2] === 'd') {
       return true
     }
-    
   }
-  
   return false
 }
 
