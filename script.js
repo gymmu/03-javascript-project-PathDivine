@@ -155,9 +155,17 @@ export function aufgabe05(args) {
       }
       return false
     }
-    
 
-  export function aufgabe11 (args) {
+
+export function aufgabe10(args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
+
+
+  export function aufgabe11(args) {
     const input = args
     const result = []
     let ascii = -1
