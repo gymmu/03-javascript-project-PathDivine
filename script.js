@@ -258,12 +258,15 @@ export function aufgabe15(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i];
 
+    // Unterbricht die Schleife, wenn ein Leerzeichen auftritt
     if (currentElement === " ") {
-      break
+      break;
     }
 
+    // Hängt das aktuelle Zeichen an das Ergebnis an
     result.push(currentElement);
   }
 
-  return result.join("");
+  // Verbindet die Zeichen im Ergebnis und gibt die Zeichenfolge zurück
+  return result.join('');
 }
