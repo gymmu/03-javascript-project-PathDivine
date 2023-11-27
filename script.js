@@ -271,9 +271,30 @@ export function aufgabe15(args) {
   return result.join('');
 }
 
-export function aufgabe27 (args) {
+export function aufgabe16(args) {
   const input = args
   const result = []
   
   return result.join("")
 }
+
+export function aufgabe27(args) {
+  const input = args;
+  const result = []
+
+  if (input.length === 0) return false;
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i];
+
+      const asciiCode = currentElement.charCodeAt(0);
+      if (
+        (asciiCode < 48 && asciiCode > 57 )
+      ) {
+        return false
+    }
+  }
+  
+  return true
+   
+  }
