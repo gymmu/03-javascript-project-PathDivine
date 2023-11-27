@@ -272,8 +272,30 @@ export function aufgabe15(args) {
 }
 
 export function aufgabe16(args) {
-  const input = args
-  const result = []
-  
-  return result.join("")
+  const input = args;
+  const result = [];
+  let dollar = false
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    if (currentElement === "$") {
+      // Markiert, dass das Zeichen „$“ gefunden wurde
+      dollar = true
+      // Unterbricht die Schleife, wenn das Zeichen „$“ gefunden wird
+      break
+    }
+
+    // Hängt das aktuelle Zeichen an das Ergebniss an
+    result.push(currentElement)
+  }
+
+  // Prüft, ob „$“ gefunden wurde, und gibt dann die beiden Teile zurück
+  if (dollar) {
+    const firsstPart = result.join("")
+    const secondPart = input.slice(result.length + 1) // +1, um das „$“-Zeichen zu überspringen
+    return [firsstPart, secondPart]
+  }
+
+  return [input, ""]
 }
