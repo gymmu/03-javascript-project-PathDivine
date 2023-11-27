@@ -289,7 +289,7 @@ export function aufgabe27(args) {
 
       const asciiCode = currentElement.charCodeAt(0);
       if (
-        (asciiCode < 48 && asciiCode > 57 )
+        (asciiCode < 48 || asciiCode > 57 )
       ) {
         return false
     }
