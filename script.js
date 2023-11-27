@@ -250,3 +250,20 @@ export function aufgabe14(args) {
  
   return -1
 }
+
+export function aufgabe15(args) {
+  const input = args;
+  const result = [];
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i];
+
+    if (currentElement === " ") {
+      break
+    }
+
+    result.push(currentElement);
+  }
+
+  return result.join("");
+}
