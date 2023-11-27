@@ -270,3 +270,10 @@ export function aufgabe15(args) {
   // Verbindet die Zeichen im Ergebnis und gibt die Zeichenfolge zurück
   return result.join('');
 }
+
+export function aufgabe16(args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
