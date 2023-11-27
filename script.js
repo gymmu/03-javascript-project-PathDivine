@@ -279,10 +279,20 @@ export function aufgabe16(args) {
 }
 
 export function aufgabe17(args) {
-  const input = args
-  const result = []
+  const input = args;
+  const result = input.split(','); 
+
   
-  return result.join("")
+  for (let i = 0; i < result.length - 1; i++) {
+    for (let j = 0; j < result.length - 1 - i; j++) {
+      if (result[j] > result[j + 1]) {
+        
+        [result[j], result[j + 1]] = [result[j + 1], result[j]];
+      }
+    }
+  }
+
+  return result.join(',');
 }
 
 export function aufgabe27(args) {
