@@ -278,6 +278,13 @@ export function aufgabe16(args) {
   return result.join("")
 }
 
+export function aufgabe17(args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
+
 export function aufgabe27(args) {
   const input = args;
   const result = []
