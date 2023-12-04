@@ -122,7 +122,7 @@ export function aufgabe05(args) {
     
       for (let i = 0; i < input.length - 2; i++) {
         const currentElement = input[i]
-    
+        // Sollte ein "und" erkennen
         if (input[i] === 'u' && input[i + 1] === 'n' && input[i + 2] === 'd') {
           return true
         }
