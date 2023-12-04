@@ -315,6 +315,14 @@ export function aufgabe18(args) {
 export function aufgabe19(args) {
   const input = args
   const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    // Füge jedes Zeichen zweimal hinzu
+    result.push(currentElement, currentElement)
+    
+  }
   
   return result.join("")
 }
