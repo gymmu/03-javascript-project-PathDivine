@@ -67,40 +67,6 @@ export function aufgabe04(args) {
   return count
 }
 
-export function aufgabe08(args) {
-  const input = args
-  const result = []
-
-  for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-
-    if (currentElement === 'e') {
-      result.push ("3")
-    } else {
-      result.push(currentElement)
-    }
-
-  }
-  return result.join("")
-}
-
-export function aufgabe09(args) {
-  const input = args
-  const result = []
-  let len = 0
-
-  for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-
-    len = len + 1
-    
-  }
-  if (len === 6) {
-    return true }
-    else {return false}
-  }
-
-
 
 export function aufgabe05(args) {
   const input = args;
@@ -155,6 +121,40 @@ export function aufgabe05(args) {
       }
       return false
     }
+
+    export function aufgabe08(args) {
+      const input = args
+      const result = []
+    
+      for (let i = 0; i < input.length; i++) {
+        const currentElement = input[i]
+    
+        if (currentElement === 'e') {
+          result.push ("3")
+        } else {
+          result.push(currentElement)
+        }
+    
+      }
+      return result.join("")
+    }
+    
+    
+    export function aufgabe09(args) {
+      const input = args
+      const result = []
+      let len = 0
+    
+      for (let i = 0; i < input.length; i++) {
+        const currentElement = input[i]
+    
+        len = len + 1
+        
+      }
+      if (len === 6) {
+        return true }
+        else {return false}
+      }
 
 
     export function aufgabe10(args) {
