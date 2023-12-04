@@ -200,7 +200,9 @@ export function aufgabe05(args) {
     }
     for (let i = 0; i < input.length; i++) {
       const currentElement = input[i]
+      // findet den ascii code des aktuellen Elelements
       ascii = currentElement.charCodeAt(0)
+      // gibt den herausgefundenen ascii Wert an
       return ascii
     }
     return null
