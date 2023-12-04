@@ -25,12 +25,16 @@ export function aufgabe02(args) {
   const result = []
   
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i];
-    const uppercaseElement = currentElement.toUpperCase();
-    result.push(uppercaseElement);
+    const currentElement = input[i]
+
+    // Wandle das aktuelle Element in einen Grossbuchstaben um
+    const uppercaseElement = currentElement.toUpperCase()
+
+    // Hänge den Grossbuchstaben an das Resultat an...
+    result.push(uppercaseElement)
   }
 
-  return result.join("");
+  return result.join("")
 
 }
 
