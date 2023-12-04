@@ -194,7 +194,7 @@ export function aufgabe05(args) {
     const input = args
     const result = []
     let ascii = -1
-   
+   // wenn das aktuelle Element kleiner als 1 ist antworte null
     if (input.length > 1){
       return null
     }
