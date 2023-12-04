@@ -66,7 +66,7 @@ export function aufgabe04(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-
+    // überprüfe ob das aktuelle Element ein leerzeichen ist
     if (currentElement === ' ') {
       count = count + 1
     }
