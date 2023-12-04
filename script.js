@@ -4,11 +4,13 @@ export function aufgabe01(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-
+    // Wenn das aktuelle Zeichen "e" ist, hängt an die Liste an
     if (currentElement === 'e') {
       result.push ("")
+    // Wenn das aktuelle Zeichen ein "E" ist, hänge nichts an die Liste an
     } else if (currentElement === 'E') {
       result.push ("")
+    // Das aktuelle Zeichen ist weder eine "e" noch ein "E", hängt also das aktuelle Zeichen an
     } else {
       result.push(currentElement)
     }
@@ -139,7 +141,7 @@ export function aufgabe05(args) {
       return result.join("")
     }
     
-    
+
     export function aufgabe09(args) {
       const input = args
       const result = []
