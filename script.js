@@ -77,13 +77,13 @@ export function aufgabe04(args) {
 
 
 export function aufgabe05(args) {
-  const input = args;
+  const input = args
   const result = []
 
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i];
-
-      const asciiCode = currentElement.charCodeAt(0);
+    const currentElement = input[i]
+    // Sollte einen Grossbuchstaben erkennen mit dem Ascii code
+      const asciiCode = currentElement.charCodeAt(0)
       if (
         (asciiCode >= 65 && asciiCode <= 90 )
       ) {
