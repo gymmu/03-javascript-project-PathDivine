@@ -160,6 +160,7 @@ export function aufgabe05(args) {
         len = len + 1
         
       }
+      // prüft ob das aktuelle Element 6 Zeichen lang ist
       if (len === 6) {
         return true }
         else {return false}
