@@ -136,8 +136,9 @@ export function aufgabe05(args) {
     
       for (let i = 0; i < input.length; i++) {
         const currentElement = input[i]
-    
+        // prüft ob das aktuelle Element ein 'e' ist
         if (currentElement === 'e') {
+          // wenn ja, dann erstezte dies mit einem "3"
           result.push ("3")
         } else {
           result.push(currentElement)
