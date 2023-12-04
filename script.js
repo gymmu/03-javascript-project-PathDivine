@@ -45,9 +45,11 @@ export function aufgabe03(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-
+    // Soll nur ein 'e' enthalten
     if (currentElement === 'e') {
       count = count + 1
+
+    // Soll grosses 'E' zählen
     } else if (currentElement === 'E') {
       count = count + 1
     }
