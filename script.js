@@ -283,13 +283,21 @@ export function aufgabe15(args) {
 
 export function aufgabe16(args) {
   const input = args
-  const result = []
+  const result = input.split('$')
+
+  for (let i = 0; i < result.length - 1; i++) {
+    for (let j = 0; j < result.length - 1 - i; j++) {
+      if (result[j] > result[j + 1]) {
+        [result[j], result[j + 1]] = [result[j + 1], result[j]]
+      }
+    }
+  }
   
   return result.join("")
 }
 
 export function aufgabe17(args) {
-  const input = args;
+  const input = args
   const result = input.split(',')
 
   // Bubble Sort zum Sortieren der Elemente der Liste
