@@ -296,22 +296,19 @@ const zweiterTeil = input.substring(currentElement + 1)
 return [ersterTeil, zweiterTeil]
 }
 
-export function aufgabe17(args) {
-  const input = args
-  const result = input.split(',')
 
-  // Bubble Sort zum Sortieren der Elemente der Liste
-  for (let i = 0; i < result.length - 1; i++) {
-    for (let j = 0; j < result.length - 1 - i; j++) {
-      if (result[j] > result[j + 1]) {
-        // Tauscht die Elemente aus, wenn sie in der falschen Reihenfolge sind
-        [result[j], result[j + 1]] = [result[j + 1], result[j]]
-      }
-    }
+export function aufgabe17(args) {
+  const input = args.split(',') // Teilt die Eingabe durch Kommas auf
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i].trim() // Schneidet Leerzeichen um jedes Element herum ab. (Hier habe ich gegoogelt, damit ich ".trim" herausfinde)
+    result.push(currentElement)
   }
 
-  return result.join(',')
+  return result.join(", ") // Verbindet verarbeitete Elemente mit Kommas und gibt sie zurück
 }
+
 
 export function aufgabe18(args) {
   const input = args
