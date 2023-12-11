@@ -408,3 +408,10 @@ export function aufgabe27(args) {
     
     return result.join("")
   }
+
+  export function bubblesort(args) {
+    const input = args
+    const result = []
+    
+    return result.join("")
+  }
