@@ -319,9 +319,11 @@ export function aufgabe18(args) {
   for (let i = 0; i < input.length; i++) {
     const currentCharCode = input.charCodeAt(i)
 
+    // Prüft, ob das Zeichen ein Buchstabe ist
     if ((currentCharCode >= 65 && currentCharCode <= 90) || (currentCharCode >= 97 && currentCharCode <= 122)) {
       name += input[i]
     }
+    // Prüft, ob das Zeichen eine Ziffer ist
     else if (currentCharCode >= 48 && currentCharCode <= 57) {
       alter += input[i]
     }
