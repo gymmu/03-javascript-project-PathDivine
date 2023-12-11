@@ -417,7 +417,7 @@ export function aufgabe27(args) {
       const currentElement = list[i] // Das momentane Element in der Eingabeleiste
       const nextElement = list[i + 1] // Das folgende Element in der Eingabeleiste
 
-      if (currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) {
+      if (currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) {// Die Elemente müssen vertauscht werden da die Reihenfolge nicht richtig ist
         const tmp = list[i + 1]
         list[i + 1] = list[i]
         list[i] = tmp
