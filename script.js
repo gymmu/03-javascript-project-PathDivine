@@ -409,9 +409,24 @@ export function aufgabe27(args) {
     return result.join("")
   }
 
-  export function bubblesort(args) {
+  export function bubbleSort(args) {
     const input = args
-    const result = []
+    const list = input.split("")
+
+    for (let i = 0; i < list.length - 1; i++) {
+      const currentElement = list[i]
+      const nextElement = list[i + 1]
+
+      if (currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) {
+        const tmp = list[i + 1]
+        list[i + 1] = list[i]
+        list[i] = tmp
+        i = -1
+      }
+    }
+    const result = list.join("")
+    console.log(result)
+
     
-    return result.join("")
+    return result
   }
