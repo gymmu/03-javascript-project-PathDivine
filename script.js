@@ -262,11 +262,11 @@ export function aufgabe14(args) {
 }
 
 export function aufgabe15(args) {
-  const input = args;
-  const result = [];
+  const input = args
+  const result = []
 
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i];
+    const currentElement = input[i]
 
     // Unterbricht die Schleife, wenn ein Leerzeichen auftritt
     if (currentElement === " ") {
@@ -274,27 +274,26 @@ export function aufgabe15(args) {
     }
 
     // Hängt das aktuelle Zeichen an das Ergebnis an
-    result.push(currentElement);
+    result.push(currentElement)
   }
 
   // Verbindet die Zeichen im Ergebnis und gibt die Zeichenfolge zurück
-  return result.join('');
+  return result.join('')
 }
 
 export function aufgabe16(args) {
-  const input = args
-  const result = input.split('$')
-  for (let i = 0; i < input.length; i++) {
-    result.push(input[i])
-    if (input[i] === "$") {
-      if (input.length - 1 === i) {
-        return [result.join]
-      } else {
-        return [result.join]
-      }
-    }
-  }
-  return [result.join(""), false]
+  const input = args //Für diese Aufgabe habe ich AI benutzt. Der prompt ist: Schreiben Sie eine Javascript-Funktion, die Eingaben bis zum Zeichen „$“ als ersten Teil einer Liste liest, der Rest als zweiter Teil.
+  const result = []
+  const dollarZeichen = '$'
+  const currentElement = input.indexOf(dollarZeichen)
+
+  if (currentElement === -1) {
+    return result.join("")}
+
+const ersterTeil = input.substring(0, currentElement)
+const zweiterTeil = input.substring(currentElement + 1)
+
+return [ersterTeil, zweiterTeil]
 }
 
 export function aufgabe17(args) {
