@@ -409,6 +409,11 @@ export function aufgabe27(args) {
     return result.join("")
   }
 
+
+
+
+
+
   export function bubbleSort(args) {
     const input = args
     const list = input.split("") // Mit deisem Code wandlet man den Text um, somit wird das Element vertauscht
@@ -424,9 +429,9 @@ export function aufgabe27(args) {
         i = -1 //es fängt von vorne an
       }
     }
-    const result = list.join("")
+    const result = list.join("") //die sortierte Eingabeleiste wird wieder zu einem Text zusammengefügt
     console.log(result)
 
     
-    return result
+    return result // der sortierte Text wird zurückgegeben
   }
