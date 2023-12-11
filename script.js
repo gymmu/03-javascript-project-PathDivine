@@ -414,7 +414,7 @@ export function aufgabe27(args) {
     const list = input.split("") // Mit deisem Code wandlet man den Text um, somit wird das Element vertauscht
 
     for (let i = 0; i < list.length - 1; i++) { //Die Schleife durchläuft die Eingabeleiste.
-      const currentElement = list[i]
+      const currentElement = list[i] // Das momentane Element in der Eingabeleiste.
       const nextElement = list[i + 1]
 
       if (currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) {
