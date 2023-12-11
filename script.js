@@ -419,9 +419,9 @@ export function aufgabe27(args) {
 
       if (currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) {// Die Elemente müssen vertauscht werden da die Reihenfolge nicht richtig ist
         const tmp = list[i + 1]
-        list[i + 1] = list[i]
+        list[i + 1] = list[i] //vertauschen der ELemente in der Eingabeleiste
         list[i] = tmp
-        i = -1
+        i = -1 //es fängt von vorne an
       }
     }
     const result = list.join("")
