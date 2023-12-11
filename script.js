@@ -411,7 +411,7 @@ export function aufgabe27(args) {
 
   export function bubbleSort(args) {
     const input = args
-    const list = input.split("")
+    const list = input.split("") // Mit deisem Code wandlet man den Text um, somit wird das Element vertauscht
 
     for (let i = 0; i < list.length - 1; i++) {
       const currentElement = list[i]
