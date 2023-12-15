@@ -398,8 +398,23 @@ export function aufgabe22(args) {
 export function aufgabe23(args) {
   const input = args
   const result = []
-  
-  return result.join("")
+
+  if (input.length === 0) {
+    return '' // Soll leer zurückgeben
+  }
+
+  const ersterTeil = input.charAt(0)
+
+  result.push(ersterTeil) // Soll erstes Zeichen am Anfang der Ausgabe anhängen
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    result.push(currentElement)
+  }
+
+  result.push(ersterTeil) //Soll erstes Zeichen am Schluss der Ausgabe anhängen
+
+  return result.join('')
 }
 
 export function aufgabe24(args) {
