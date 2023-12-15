@@ -355,12 +355,24 @@ export function aufgabe19(args) {
   return result.join("")
 }
 
-export function aufgabe20(args) {
+export function aufgabe20 (args) {
   const input = args
   const result = []
-  
-  return result.join("")
+ 
+  for(let i =0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    if (currentElement === ".") {
+      if (input[i+1] === " ")  {
+        return true
+      }
+ 
+    }
+ 
 }
+  return false
+}
+
 
 export function aufgabe21(args) {
   const input = args
