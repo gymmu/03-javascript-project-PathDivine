@@ -459,13 +459,26 @@ export function aufgabe27(args) {
    
   }
 
-  export function aufgabe28(args) {
+  export function  aufgabe28 (args) {
     const input = args
-    const result = []
-    
-    return result.join("")
+  
+  // Die Eingabe wird mit einem Leerzeichen geteilt, so dass die Zahlen getrennt werden.
+    const zahlen = input.split(' ')
+  
+   // Überprüfung, ob genau zwei Elemente vorhanden sind und beide Zahlen sind.
+    if (zahlen.length === 2 && !isNaN(zahlen[0]) && !isNaN(zahlen[1])) {
+  
+      // Wenn die Bedingung erfüllt ist, werden die beiden Zahlen in 'zahl1' und 'zahl2' umgewandelt.
+      const zahl1 = parseFloat(zahlen[0])
+      const zahl2 = parseFloat(zahlen[1])
+     
+      // Die Summe wird als Zeichenkette zurückgegeben.
+      const summe = zahl1 + zahl2
+      return `${summe}`
+  } else {
+      return null
   }
-
+  }  
 
 
 
