@@ -382,7 +382,7 @@ export function aufgabe21 (args) {
  
 for (let i = input.length -1; i>=0; i--) {
   const currentElement = input[i]
-  result.push(currentElement)
+  result.push(currentElement)//kehrt die Eingabe um.
  
 }
   return result.join("")
