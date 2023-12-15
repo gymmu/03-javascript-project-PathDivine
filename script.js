@@ -296,7 +296,7 @@ const zweiterTeil = input.substring(currentElement + 1)
 return [ersterTeil, zweiterTeil]
 }
 
-
+// Aufgabe mit AI gemacht. Prompt: Schreibe eine javascript Funktion die, die Eingabe liesst als Liste ein, Einträge in der Liste werden von einem ',' getrennt.
 export function aufgabe17(args) {
   const input = args.split(',') // Teilt die Eingabe durch Kommas auf
   const result = []
