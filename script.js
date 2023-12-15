@@ -376,10 +376,15 @@ export function aufgabe20 (args) {
 }
 
 
-export function aufgabe21(args) {
+export function aufgabe21 (args) {
   const input = args
   const result = []
-  
+ 
+for (let i = input.length -1; i>=0; i--) {
+  const currentElement = input[i]
+  result.push(currentElement)
+ 
+}
   return result.join("")
 }
 
