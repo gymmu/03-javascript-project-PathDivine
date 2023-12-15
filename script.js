@@ -362,7 +362,9 @@ export function aufgabe20 (args) {
   for(let i =0; i < input.length; i++) {
     const currentElement = input[i]
 
+    // Überprüfung, ob das aktuelle Element ein Punkt ist.
     if (currentElement === ".") {
+      // Überprüfung, ob das nächste Element nach dem Punkt ein Leerzeichen ist.
       if (input[i+1] === " ")  {
         return true
       }
