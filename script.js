@@ -449,8 +449,10 @@ export function aufgabe27(args) {
 
       const asciiCode = currentElement.charCodeAt(0);
       if (
+        // Ist die Eingabe ascii zwischen 48 und 57 ist sie eine Zahl.
         (asciiCode < 48 || asciiCode > 57 )
       ) {
+        //wenn es keine Zahl ist, dann false
         return false
     }
   }
